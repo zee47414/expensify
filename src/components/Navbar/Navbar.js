@@ -1,3 +1,4 @@
+import { SiExpensify } from "react-icons/si";
 import React, { useState } from 'react';
 
 const Navbar = () => {
@@ -7,9 +8,8 @@ const Navbar = () => {
         <nav className="bg-gray-600 p-4 lg:px-52">
             <div className="container mx-auto flex justify-between items-center">
                 {/* Logo */}
-                <div className="text-white text-2xl font-bold">MyLogo</div>
+                <div className="text-white text-2xl font-bold"><SiExpensify fontSize={50}/></div>
 
-                {/* Hamburger Icon (Mobile) */}
                 <div className="lg:hidden">
                     <button
                         onClick={() => setIsOpen(!isOpen)}
@@ -40,20 +40,22 @@ const Navbar = () => {
                         Home
                     </a>
                     <a href="#" className="block text-white py-2 px-4 lg:inline-block">
-                        About
+                        Transactions
                     </a>
                     <a href="#" className="block text-white py-2 px-4 lg:inline-block">
-                        Services
+                        Expenses
                     </a>
                     <a href="#" className="block text-white py-2 px-4 lg:inline-block">
                         Contact
                     </a>
-                    <a>
+                    <a className='flex justify-center items-center border border-sky-200 p-2'>
+                        
                         <img
                             alt=""
                             src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
                             className="h-8 w-8 rounded-full"
                         />
+                        <p className="block text-white px-2 lg:inline-block">Zeeshan Khan</p>
                     </a>
                 </div>
             </div>
