@@ -5,7 +5,7 @@ const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <nav className="bg-gray-600 p-4 lg:px-52">
+        <nav className="bg-black p-4 lg:px-52">
             <div className="container mx-auto flex justify-between items-center">
                 {/* Logo */}
                 <div className="text-white text-2xl font-bold"><SiExpensify fontSize={50}/></div>
@@ -45,9 +45,7 @@ const Navbar = () => {
                     <a href="#" className="block text-white py-2 px-4 lg:inline-block">
                         Expenses
                     </a>
-                    <a href="#" className="block text-white py-2 px-4 lg:inline-block">
-                        Contact
-                    </a>
+                  
                     <a className='flex justify-center items-center border border-sky-200 p-2'>
                         
                         <img
